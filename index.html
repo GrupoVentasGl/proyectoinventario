@@ -3,18 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GL Multitienda · Sistema administrativo para tiendas de repuestos</title>
+<title>PROYECTOINVENTARIO · Sistema administrativo para tiendas de repuestos</title>
 <meta name="description" content="Inventario con fotos, precios en dólares y bolívares al día, ventas con notas de entrega y control de ganancias. Funciona sin internet y se sincroniza entre tus equipos.">
 <meta name="theme-color" content="#0e2745">
 <meta property="og:type" content="website">
-<meta property="og:title" content="GL Multitienda · Sistema administrativo para tiendas de repuestos">
+<meta property="og:title" content="PROYECTOINVENTARIO · Sistema administrativo para tiendas de repuestos">
 <meta property="og:description" content="Inventario, ventas y precios BCV en un solo lugar. Instalación asistida, funciona sin internet.">
 <meta property="og:image" content="assets/app-resumen.png">
-<link rel="icon" href="assets/icono.png">
+<link rel="icon" href="assets/icono.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icono.png" sizes="512x512">
 <link rel="apple-touch-icon" href="assets/icono.png">
 <style>
 /* ============================================================
-   GL Multitienda — página comercial
+   PROYECTOINVENTARIO — página comercial
    Para publicar: sube esta carpeta a Firebase Hosting, GitHub
    Pages, Netlify o Cloudflare Pages. No requiere servidor.
    ANTES DE PUBLICAR:
@@ -64,7 +65,7 @@ header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,#fff 88%,tr
 .nav{height:68px;display:flex;align-items:center;gap:18px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:8px}
 .mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--green));display:grid;place-items:center;color:#fff;font-weight:800;font-size:14px;letter-spacing:-.4px;box-shadow:0 8px 20px rgba(16,185,129,.22);flex:none}
-.brand .bt b{display:block;font-size:15px;letter-spacing:-.02em;line-height:1.1}
+.brand .bt b{display:block;font-size:13.5px;letter-spacing:-.01em;line-height:1.1;white-space:nowrap}
 .brand .bt span{display:block;font-size:10.5px;color:var(--mu);letter-spacing:.02em}
 .nav-links{display:flex;gap:26px;margin-left:auto}
 .nav-links a{font-size:13.5px;font-weight:600;color:var(--tx2);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;transition:color .15s ease,border-color .15s ease}
@@ -271,9 +272,9 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="GL Multitienda, inicio">
-      <span class="mark">GL</span>
-      <span class="bt"><b>GL Multitienda</b><span>Sistema administrativo</span></span>
+    <a class="brand" href="#top" aria-label="PROYECTOINVENTARIO, inicio">
+      <span class="mark">PI</span>
+      <span class="bt"><b>PROYECTOINVENTARIO</b><span>Sistema administrativo</span></span>
     </a>
     <nav class="nav-links" aria-label="Secciones">
       <a href="#funciones">Funciones</a>
@@ -282,7 +283,7 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
       <a href="#planes">Planes</a>
       <a href="#preguntas">Preguntas</a>
     </nav>
-    <a class="btn wa sm nav-cta" data-wa="Hola, quiero una demostración de GL Multitienda." href="#contacto">
+    <a class="btn wa sm nav-cta" data-wa="Hola, quiero una demostración de PROYECTOINVENTARIO." href="#contacto">
       <svg class="ic"><use href="#i-wa"/></svg> Solicitar demo
     </a>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mmenu">
@@ -295,7 +296,7 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
     <a href="#como">Cómo funciona</a>
     <a href="#planes">Planes</a>
     <a href="#preguntas">Preguntas</a>
-    <a class="btn wa" data-wa="Hola, quiero una demostración de GL Multitienda." href="#contacto"><svg class="ic"><use href="#i-wa"/></svg> Solicitar demo</a>
+    <a class="btn wa" data-wa="Hola, quiero una demostración de PROYECTOINVENTARIO." href="#contacto"><svg class="ic"><use href="#i-wa"/></svg> Solicitar demo</a>
   </div>
 </header>
 
@@ -310,7 +311,7 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
         <h1 id="h1">Tu inventario, tus ventas y tus precios <em>en un solo lugar</em>.</h1>
         <p class="lead">Fotos de cada repuesto, precios en dólares y bolívares al día, notas de entrega listas para imprimir o enviar, y control de ganancias. Funciona sin internet y se sincroniza entre tus equipos.</p>
         <div class="hero-actions">
-          <a class="btn primary" data-wa="Hola, quiero una demostración de GL Multitienda para mi tienda de repuestos." href="#contacto">
+          <a class="btn primary" data-wa="Hola, quiero una demostración de PROYECTOINVENTARIO para mi tienda de repuestos." href="#contacto">
             <svg class="ic"><use href="#i-wa"/></svg> Solicitar demostración
           </a>
           <a class="btn ghost" href="#capturas">Ver la app por dentro</a>
@@ -493,7 +494,7 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
             <li><svg class="ic"><use href="#i-check"/></svg> Ventas y notas de entrega</li>
             <li><svg class="ic"><use href="#i-check"/></svg> Respaldos y soporte por WhatsApp</li>
           </ul>
-          <a class="btn ghost" data-wa="Hola, me interesa el plan Esencial de GL Multitienda." href="#contacto">Consultar este plan</a>
+          <a class="btn ghost" data-wa="Hola, me interesa el plan Esencial de PROYECTOINVENTARIO." href="#contacto">Consultar este plan</a>
         </article>
 
         <article class="plan hot reveal">
@@ -509,7 +510,7 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
             <li><svg class="ic"><use href="#i-check"/></svg> Migración de tu inventario actual</li>
             <li><svg class="ic"><use href="#i-check"/></svg> Soporte prioritario</li>
           </ul>
-          <a class="btn primary" data-wa="Hola, me interesa el plan Tienda de GL Multitienda." href="#contacto">Consultar este plan</a>
+          <a class="btn primary" data-wa="Hola, me interesa el plan Tienda de PROYECTOINVENTARIO." href="#contacto">Consultar este plan</a>
         </article>
 
         <article class="plan reveal">
@@ -523,7 +524,7 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
             <li><svg class="ic"><use href="#i-check"/></svg> Capacitación a tu equipo</li>
             <li><svg class="ic"><use href="#i-check"/></svg> Ajustes a la medida de tu operación</li>
           </ul>
-          <a class="btn wa" data-wa="Hola, quiero una cotización a la medida de GL Multitienda." href="#contacto">Pedir cotización</a>
+          <a class="btn wa" data-wa="Hola, quiero una cotización a la medida de PROYECTOINVENTARIO." href="#contacto">Pedir cotización</a>
         </article>
       </div>
       <p class="plans-note">Precios de referencia. La instalación se cobra una vez; la mensualidad puede cancelarse cuando quieras.</p>
@@ -578,7 +579,7 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
           <h2>Agenda una demostración de 15 minutos.</h2>
           <p>Te mostramos el sistema con tu tipo de repuestos y te decimos cuánto costaría dejarlo funcionando en tu tienda.</p>
         </div>
-        <a class="btn primary" data-wa="Hola, quiero agendar una demostración de GL Multitienda." href="#contacto">
+        <a class="btn primary" data-wa="Hola, quiero agendar una demostración de PROYECTOINVENTARIO." href="#contacto">
           <svg class="ic"><use href="#i-wa"/></svg> Escribir por WhatsApp
         </a>
       </div>
@@ -591,8 +592,8 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
     <div class="foot">
       <div>
         <a class="brand" href="#top">
-          <span class="mark">GL</span>
-          <span class="bt"><b>GL Multitienda</b><span>Sistema administrativo</span></span>
+          <span class="mark">PI</span>
+          <span class="bt"><b>PROYECTOINVENTARIO</b><span>Sistema administrativo</span></span>
         </a>
         <p>Sistema administrativo para tiendas de repuestos y talleres. Inventario, ventas y precios al día, con acompañamiento real.</p>
       </div>
@@ -605,13 +606,13 @@ footer{padding:46px 0 30px;border-top:1px solid var(--bd);margin-top:74px;backgr
       </nav>
     </div>
     <div class="copy">
-      <span>© <span id="year">2026</span> GL Multitienda. Todos los derechos reservados.</span>
+      <span>© <span id="year">2026</span> PROYECTOINVENTARIO. Todos los derechos reservados.</span>
       <span>Hecho en Venezuela.</span>
     </div>
   </div>
 </footer>
 
-<a class="wa-float" data-wa="Hola, quiero una demostración de GL Multitienda." href="#contacto" aria-label="Escribir por WhatsApp">
+<a class="wa-float" data-wa="Hola, quiero una demostración de PROYECTOINVENTARIO." href="#contacto" aria-label="Escribir por WhatsApp">
   <svg class="ic"><use href="#i-wa"/></svg>
 </a>
 
@@ -632,7 +633,7 @@ const WA = '58414XXXXXXX';
         alert('Falta configurar el número de WhatsApp en index.html (constante WA).');
         return;
       }
-      const txt = el.dataset.wa || 'Hola, quiero información sobre GL Multitienda.';
+      const txt = el.dataset.wa || 'Hola, quiero información sobre PROYECTOINVENTARIO.';
       window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(txt), '_blank', 'noopener');
     });
   });
